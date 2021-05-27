@@ -5,7 +5,26 @@ import Title from './components/Title'
 import Explanation from './components/Explanation'
 import Date from './components/Date'
 import axios from 'axios'
-import "./App.css";
+import "./App.css"
+import styled from 'styled-components';
+
+const HeaderDiv = styled.div `
+color: blue;
+font-family: courier-new;
+padding: 20px;
+`
+
+const StyledApp = styled.div `
+background-color: gray; 
+padding: 185px;
+`
+
+const StyledPhoto = styled.div `
+color: #f7b508;
+font-family: courier-new;
+padding: 20px;
+word-spacing: 5px;
+`
 
 function App() {
   const [photo, setPhoto] = useState({})
